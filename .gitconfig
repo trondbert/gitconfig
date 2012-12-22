@@ -1,0 +1,25 @@
+[user]
+[github]
+	user = trondvalen
+	token = e47c6f682077d89ea7969afa6d14a9d4
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 0x0+0+0
+	main-window-view = HistoryView
+	history-view-vpane-position = 275
+	file-view-vpane-position = 213
+[user]
+	name = Trond Valen
+	email = trv@steria.no
+[core]
+	editor = subl
+[http]
+	proxy = 
+[alias]
+  ci = commit
+  co = checkout
+  br = branch
+  st = status
+  pullrb = pull --rebase
+[i18n]
+  commitencoding = ISO-8859-1
