@@ -21,5 +21,7 @@
   br = branch
   st = status
   pullrb = pull --rebase
+# ahead lists commits ahead of origin/<given branch>, i.e. commits that are not yet pushed
+  ahead = !sh -c 'git log origin/$1..HEAD' -
 [i18n]
   commitencoding = ISO-8859-1
