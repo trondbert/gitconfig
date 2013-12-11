@@ -25,9 +25,11 @@
   resethardhead = reset --hard HEAD
   stalis = "stash list"
   resetheadMin1 = reset HEAD~1
-  ahead = !sh -c 'git log origin/$1..HEAD' - 
+  # ahead lists commits ahead of origin/<given branch>, i.e. commits that are not yet pushed
+  ahead = !sh -c 'git log origin/$1..HEAD' -   
 [push]
 	default = matching
 [color]
 	ui = true
-
+[i18n]
+  commitencoding = ISO-8859-1
