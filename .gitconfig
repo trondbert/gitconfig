@@ -10,9 +10,10 @@
 	file-view-vpane-position = 213
 [user]
 	name = Trond Valen
-	email = trv@steria.no
+	email = trondvalen@gmail.com
 [core]
-	editor = subl
+	editor = gedit
+	autocrlf = input
 [http]
 	proxy = 
 [alias]
@@ -21,5 +22,12 @@
   br = branch
   st = status
   pullrb = pull --rebase
-[i18n]
-  commitencoding = ISO-8859-1
+  resethardhead = reset --hard HEAD
+  stalis = "stash list"
+  resetheadMin1 = reset HEAD~1
+  ahead = !sh -c 'git log origin/$1..HEAD' - 
+[push]
+	default = matching
+[color]
+	ui = true
+
